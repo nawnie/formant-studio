@@ -23,7 +23,7 @@ FORMANT is a focused digital audio workstation for making short, expressive loop
   <img src="docs/reviews/export-preview.png" alt="FORMANT audio export preview" width="430" />
 </p>
 
-A local groove workstation with an MCP interface for AI collaborators. Six synthesized instruments, four editable bars, and one focused workspace. Built for modern browsers on Windows and macOS.
+Six synthesized instruments, four editable bars, and one focused workspace keep the surface quick to learn while leaving room for detailed sound design.
 
 ## Start the studio
 
