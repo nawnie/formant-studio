@@ -29,7 +29,7 @@ Six synthesized instruments, four editable bars, and one focused workspace keep 
 
 Requires **Node.js 22.12 or newer** and a modern browser.
 
-For the fastest setup, download the latest platform bundle from [Releases](https://github.com/nawnie/formant-studio/releases/latest), unzip it, and double-click **Install FORMANT**. The Windows launcher can install Node.js through `winget`; the macOS launcher can install Node 22 through Homebrew when Homebrew is already present. The bundle installs dependencies, builds the studio, and opens it in your browser.
+For the fastest setup, download the latest platform bundle from [Releases](https://github.com/nawnie/formant-studio/releases/latest), unzip it, and double-click **Install FORMANT**. The Windows launcher can install Node.js through `winget`; the macOS bundle includes a true **Install FORMANT.app** you can double-click. If macOS shows a security warning, Control-click the app, choose **Open**, then choose **Open** again. The installer installs dependencies, builds the studio, and opens it in your browser.
 
 ```sh
 npm ci
@@ -37,7 +37,7 @@ npm run build
 npm run launch
 ```
 
-Open **http://127.0.0.1:4317**. Windows: double-click `Setup and Launch.cmd` the first time; use `Launch FORMANT.vbs` afterward for a hidden background launch. macOS: run `bash "Launch FORMANT.command"` from Terminal. This installs project dependencies if needed and opens your browser. Nothing is installed as a startup service.
+Open **http://127.0.0.1:4317**. Windows: double-click `Setup and Launch.cmd` the first time; use `Launch FORMANT.vbs` afterward for a hidden background launch. macOS: double-click `Install FORMANT.app` in the downloaded bundle. If you prefer Terminal, run `bash "Launch FORMANT.command"`. Nothing is installed as a startup service.
 
 `npm run stop` stops only a verified FORMANT server at the configured address. `npm start` runs the server in the current terminal. The optional `FORMANT_PORT` environment variable selects another explicitly chosen loopback port; the app never evicts an existing listener or silently picks a different port.
 

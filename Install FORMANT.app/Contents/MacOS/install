@@ -1,0 +1,21 @@
+#!/bin/bash
+set -e
+APP_DIR="$(cd "$(dirname "$0")/../.." && pwd)"
+ROOT_DIR="$(cd "$APP_DIR/.." && pwd)"
+LOG="$HOME/Desktop/FORMANT-install.log"
+exec > >(tee "$LOG") 2>&1
+cd "$ROOT_DIR"
+
+osascript -e 'display notification "FORMANT is installing dependencies…" with title "FORMANT"' || true
+if ! command -v node >/dev/null 2>&1 && command -v brew >/dev/null 2>&1; then
+  brew install node@22 || true
+  brew link --overwrite --force node@22 || true
+fi
+if ! command -v node >/dev/null 2>&1; then
+  osascript -e 'display dialog "FORMANT needs Node.js 22.12 or newer. Install it from nodejs.org, then double-click Install FORMANT again." buttons {"OK"} with title "FORMANT"' || true
+  exit 1
+fi
+npm ci
+npm run build
+node scripts/launch.mjs
+osascript -e 'display notification "FORMANT is ready in your browser." with title "FORMANT"' || true
