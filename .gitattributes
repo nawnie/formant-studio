@@ -1,2 +1,2 @@
 *.command text eol=lf
-Install FORMANT.app/Contents/MacOS/install text eol=lf
+**/MacOS/install text eol=lf
