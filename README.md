@@ -29,7 +29,7 @@ Six synthesized instruments, four editable bars, and one focused workspace keep 
 
 Requires **Node.js 22.12 or newer** and a modern browser.
 
-For the fastest setup, download the latest platform bundle from [Releases](https://github.com/nawnie/formant-studio/releases/latest), unzip it, and double-click **Install FORMANT**. The Windows launcher can install Node.js through `winget`; the macOS bundle includes a true **Install FORMANT.app** you can double-click. If macOS shows a security warning, Control-click the app, choose **Open**, then choose **Open** again. The installer installs dependencies, builds the studio, and opens it in your browser.
+For the fastest setup, download the latest platform bundle from [Releases](https://github.com/nawnie/formant-studio/releases/latest). On macOS, choose **FORMANT-macOS.tar.gz** (the archive preserves the launcher's permission), open it, then double-click **Install FORMANT.app**. If macOS shows a security warning, Control-click the app, choose **Open**, then choose **Open** again. The Windows launcher can install Node.js through `winget`. The installer installs dependencies, builds the studio, and opens it in your browser.
 
 ```sh
 npm ci
