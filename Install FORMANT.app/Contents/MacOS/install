@@ -7,13 +7,26 @@ exec > >(tee "$LOG") 2>&1
 cd "$ROOT_DIR"
 
 osascript -e 'display notification "FORMANT is installing dependencies…" with title "FORMANT"' || true
-if ! command -v node >/dev/null 2>&1 && command -v brew >/dev/null 2>&1; then
-  brew install node@22 || true
-  brew link --overwrite --force node@22 || true
+NODE_HOME="$HOME/.formant/node"
+if [ -x "$NODE_HOME/bin/node" ]; then
+  export PATH="$NODE_HOME/bin:$PATH"
 fi
 if ! command -v node >/dev/null 2>&1; then
-  osascript -e 'display dialog "FORMANT needs Node.js 22.12 or newer. Install it from nodejs.org, then double-click Install FORMANT again." buttons {"OK"} with title "FORMANT"' || true
-  exit 1
+  ARCH="$(uname -m)"
+  case "$ARCH" in
+    arm64) NODE_ARCH="arm64" ;;
+    x86_64) NODE_ARCH="x64" ;;
+    *) osascript -e 'display dialog "FORMANT could not identify this Mac processor." buttons {"OK"} with title "FORMANT"' || true; exit 1 ;;
+  esac
+  NODE_VERSION="v22.12.0"
+  TMP_DIR="$(mktemp -d)"
+  curl -fL --retry 3 "https://nodejs.org/dist/$NODE_VERSION/node-$NODE_VERSION-darwin-$NODE_ARCH.tar.gz" -o "$TMP_DIR/node.tar.gz"
+  mkdir -p "$HOME/.formant"
+  rm -rf "$NODE_HOME"
+  tar -xzf "$TMP_DIR/node.tar.gz" -C "$HOME/.formant"
+  mv "$HOME/.formant/node-$NODE_VERSION-darwin-$NODE_ARCH" "$NODE_HOME"
+  rm -rf "$TMP_DIR"
+  export PATH="$NODE_HOME/bin:$PATH"
 fi
 npm ci
 npm run build

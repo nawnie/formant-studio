@@ -7,9 +7,9 @@ if ! command -v node >/dev/null 2>&1 && command -v brew >/dev/null 2>&1; then
   brew link --overwrite --force node@22 || true
 fi
 if ! command -v node >/dev/null 2>&1; then
-  echo "Node.js 22.12+ is required: https://nodejs.org"
-  read -r -p "Press Return to close..."
-  exit 1
+  echo "Node.js is installed automatically by Install FORMANT.app."
+  echo "Double-click Install FORMANT.app instead of this file."
+  read -r -p "Press Return to close..."; exit 1
 fi
 npm ci
 npm run build

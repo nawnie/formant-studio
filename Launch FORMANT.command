@@ -1,8 +1,9 @@
 #!/bin/bash
 set -e
 cd "$(dirname "$0")"
+if [ -x "$HOME/.formant/node/bin/node" ]; then export PATH="$HOME/.formant/node/bin:$PATH"; fi
 if ! command -v node >/dev/null 2>&1; then
-  echo "Install Node.js 22.12 or newer from https://nodejs.org, then reopen this launcher."
+  echo "Double-click Install FORMANT.app to install the private runtime first."
   exit 1
 fi
 if [ ! -d node_modules ]; then npm ci; fi
