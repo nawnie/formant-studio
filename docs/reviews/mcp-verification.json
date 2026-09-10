@@ -1,0 +1,43 @@
+{
+  "at": "2026-09-10T16:31:15.359Z",
+  "receipts": [
+    {
+      "check": "MCP initialize",
+      "passed": true,
+      "server": {
+        "name": "formant-studio",
+        "version": "1.0.0"
+      }
+    },
+    {
+      "check": "MCP tools/list",
+      "passed": true,
+      "tools": [
+        "formant_get_session",
+        "formant_set_session",
+        "formant_set_track",
+        "formant_set_pattern",
+        "formant_set_step",
+        "formant_transport",
+        "formant_load_preset",
+        "formant_history",
+        "formant_export_audio",
+        "formant_get_export"
+      ]
+    },
+    {
+      "check": "Validated MCP edits and invalid input rejection",
+      "passed": true,
+      "revision": 29
+    },
+    {
+      "check": "MCP history, session resource and grounded prompt",
+      "passed": true
+    },
+    {
+      "check": "Cross-origin mutation rejected",
+      "passed": true,
+      "status": 403
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+.export-intro {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+.export-intro h3 {
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: -0.7px;
+}
+.export-intro p {
+  font-size: 11px;
+  color: #aebbc5;
+  margin-top: 8px;
+  line-height: 1.6;
+}
+.export-format {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding: 20px 0;
+  border-top: 1px solid #3b454c;
+  border-bottom: 1px solid #3b454c;
+}
+.export-format > div > span {
+  font-size: 9px;
+  letter-spacing: 1px;
+  color: #a4b3bd;
+}
+.export-format strong {
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+.export-format small {
+  display: block;
+  font-size: 9px;
+  color: #a9b9c3;
+  font-weight: 400;
+  margin-top: 8px;
+  line-height: 1.6;
+}
+.export-summary {
+  padding: 25px 0 22px;
+}
+.export-summary strong {
+  font-size: 16px;
+  font-weight: 500;
+  display: block;
+}
+.export-summary > span {
+  display: block;
+  font-size: 11px;
+  color: #b1bcc3;
+  margin-top: 9px;
+}
+.export-summary p {
+  color: #aeb9c2;
+  font-size: 12px;
+  line-height: 1.85;
+  margin-top: 21px;
+}
+.render-button {
+  width: 100%;
+  min-height: 43px;
+}
+.export-local {
+  text-align: center;
+  font-size: 10px;
+  color: #9dabb5;
+  margin-top: 15px;
+}
+.render-wave {
+  height: 96px;
+  margin-top: 24px;
+  background: #151b1f;
+  border: 1px solid #36434b;
+  border-radius: 5px;
+  padding: 10px 8px;
+}
+.render-wave svg {
+  width: 100%;
+  height: 100%;
+  fill: var(--accent);
+}
+.export-preview {
+  width: 100%;
+  height: 42px;
+  margin-top: 14px;
+  color-scheme: dark;
+}
+.render-stats {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  font: 10px var(--mono);
+  color: #b8c4cd;
+  margin-top: 13px;
+}
+.render-complete {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  color: #b0c9b6;
+  margin: 25px 0;
+}
+.export-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+.spin {
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (max-width: 480px) {
+  .export-intro h3 {
+    font-size: 19px;
+  }
+  .export-intro .ai-symbol {
+    height: 40px;
+    width: 40px;
+  }
+  .export-format {
+    gap: 10px;
+  }
+  .export-format strong {
+    font-size: 13px;
+  }
+  .export-format small {
+    font-size: 9px;
+  }
+  .render-stats {
+    font-size: 9px;
+  }
+  .export-summary p {
+    font-size: 11px;
+  }
+}

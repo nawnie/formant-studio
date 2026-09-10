@@ -1,0 +1,54 @@
+{
+  "at": "2026-09-10T16:28:03.501Z",
+  "receipts": [
+    {
+      "name": "Pad edit reaches saved session and undo restores it",
+      "passed": true
+    },
+    {
+      "name": "Sound search, empty state, reset and category filter",
+      "passed": true
+    },
+    {
+      "name": "Editable tempo commits valid input and rejects invalid range",
+      "passed": true
+    },
+    {
+      "name": "Note editor writes actual MIDI and displays transposed sounding note",
+      "passed": true
+    },
+    {
+      "name": "Keyboard workspace tabs, accessible fader, solo and unsolo",
+      "passed": true
+    },
+    {
+      "name": "Real browser audio graph starts and transport advances",
+      "passed": true,
+      "sampleRate": 44100
+    },
+    {
+      "name": "Stop silences transport and reports stopped runtime",
+      "passed": true
+    },
+    {
+      "name": "A real MCP call visibly updates the open browser",
+      "passed": true
+    },
+    {
+      "name": "MCP transport play and pause confirmed by browser runtime",
+      "passed": true
+    },
+    {
+      "name": "Offline render, measured waveform, audible-file preview and WAV download",
+      "passed": true,
+      "bytes": 2029760,
+      "peak": 0.2840576171875,
+      "rms": 0.01968491530790401
+    },
+    {
+      "name": "Save, starter replacement, project import and reload round trip",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

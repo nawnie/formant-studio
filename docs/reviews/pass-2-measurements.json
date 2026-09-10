@@ -1,0 +1,262 @@
+{
+  "engine": "Playwright Chromium, headless isolated context",
+  "fallbackReason": "In-app screenshot capture used incorrect crop/stitch dimensions under viewport overrides, duplicating rendered regions. IAB DOM and interaction evidence remains valid.",
+  "receipts": [
+    {
+      "name": "desktop",
+      "width": 1536,
+      "height": 1024,
+      "scrollWidth": 1536,
+      "scrollHeight": 1024,
+      "editorCount": 1
+    },
+    {
+      "name": "desktop-accessibility",
+      "violations": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "description": "Ensure ARIA attributes are not prohibited for an element's role",
+          "nodes": [
+            {
+              "target": [
+                ".spectrum"
+              ],
+              "summary": "Fix all of the following:\n  aria-label attribute cannot be used on a div with no valid role attribute."
+            }
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".project-format"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.18 (foreground color: #757d85, background color: #181a1b, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[aria-label=\"Select Analog kick\"] > span > small"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.13 (foreground color: #757d85, background color: #191b1d, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[aria-label=\"Select Soft clap\"] > span > small"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.22 (foreground color: #757d85, background color: #17191b, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[aria-label=\"Select Dusty hats\"] > span > small"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.22 (foreground color: #757d85, background color: #17191b, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[aria-label=\"Select Sub bass\"] > span > small"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.22 (foreground color: #757d85, background color: #17191b, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[aria-label=\"Select Glass keys\"] > span > small"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.22 (foreground color: #757d85, background color: #17191b, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[aria-label=\"Select Air pad\"] > span > small"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.22 (foreground color: #757d85, background color: #17191b, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".ruler-head > span:nth-child(1)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.33 (foreground color: #757d85, background color: #151617, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".ruler-head > span:nth-child(2)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.33 (foreground color: #757d85, background color: #151617, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".clip-selected > .clip-title > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.84 (foreground color: #d67c67, background color: #473432, font size: 5.3pt (7px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[aria-label=\"Analog kick, bar 2\"] > .clip-title > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.28 (foreground color: #d47b66, background color: #3a2d2d, font size: 5.3pt (7px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[aria-label=\"Analog kick, bar 3\"] > .clip-title > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.28 (foreground color: #d47b66, background color: #3a2d2d, font size: 5.3pt (7px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[aria-label=\"Analog kick, bar 4\"] > .clip-title > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.28 (foreground color: #d47b66, background color: #3a2d2d, font size: 5.3pt (7px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[aria-label=\"Sub bass, bar 1\"] > .clip-title > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.37 (foreground color: #8097cb, background color: #2b333f, font size: 5.3pt (7px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[aria-label=\"Sub bass, bar 2\"] > .clip-title > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.37 (foreground color: #8097cb, background color: #2b333f, font size: 5.3pt (7px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[aria-label=\"Sub bass, bar 3\"] > .clip-title > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.37 (foreground color: #8097cb, background color: #2b333f, font size: 5.3pt (7px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[aria-label=\"Sub bass, bar 4\"] > .clip-title > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.37 (foreground color: #8097cb, background color: #2b333f, font size: 5.3pt (7px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[aria-label=\"Glass keys, bar 1\"] > .clip-title > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.46 (foreground color: #a68fc4, background color: #32313e, font size: 5.3pt (7px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[aria-label=\"Glass keys, bar 2\"] > .clip-title > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.46 (foreground color: #a68fc4, background color: #32313e, font size: 5.3pt (7px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[aria-label=\"Glass keys, bar 3\"] > .clip-title > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.46 (foreground color: #a68fc4, background color: #32313e, font size: 5.3pt (7px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[aria-label=\"Glass keys, bar 4\"] > .clip-title > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.46 (foreground color: #a68fc4, background color: #32313e, font size: 5.3pt (7px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mixer",
+      "width": 1536,
+      "height": 1024,
+      "scrollWidth": 1536,
+      "scrollHeight": 1024,
+      "editorCount": 1
+    },
+    {
+      "name": "ai",
+      "width": 1536,
+      "height": 1024,
+      "scrollWidth": 1536,
+      "scrollHeight": 1024,
+      "editorCount": 1
+    },
+    {
+      "name": "ai-accessibility",
+      "violations": []
+    },
+    {
+      "name": "laptop",
+      "width": 1280,
+      "height": 800,
+      "scrollWidth": 1280,
+      "scrollHeight": 800,
+      "editorCount": 1
+    },
+    {
+      "name": "mobile-top",
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 1184,
+      "editorCount": 1
+    },
+    {
+      "name": "mobile-full",
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 1184,
+      "editorCount": 1
+    },
+    {
+      "name": "mobile-accessibility",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": [
+            {
+              "target": [
+                ".ruler-head > span:nth-child(1)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.33 (foreground color: #757d85, background color: #151617, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".ruler-head > span:nth-child(2)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.33 (foreground color: #757d85, background color: #151617, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".clip-selected > .clip-title > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.84 (foreground color: #d67c67, background color: #473432, font size: 5.3pt (7px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[aria-label=\"Sub bass, bar 1\"] > .clip-title > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.37 (foreground color: #8097cb, background color: #2b333f, font size: 5.3pt (7px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[aria-label=\"Glass keys, bar 1\"] > .clip-title > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.46 (foreground color: #a68fc4, background color: #32313e, font size: 5.3pt (7px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mobile-ai",
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 1184,
+      "editorCount": 1
+    },
+    {
+      "name": "browser-errors",
+      "errors": []
+    }
+  ]
+}
